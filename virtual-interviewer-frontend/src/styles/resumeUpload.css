@@ -1,0 +1,94 @@
+/* FULLSCREEN OVERLAY */
+.resume-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(6, 20, 32, 0.85);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* CARD */
+.resume-card {
+  width: 420px;
+  padding: 40px 35px;
+  border-radius: 16px;
+  background: #081c2d;
+  color: white;
+  text-align: center;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+}
+
+/* TITLE */
+.resume-card h2 {
+  color: #00e0c6;
+  margin-bottom: 10px;
+}
+
+.resume-card p {
+  color: #9cc3d5;
+  margin-bottom: 30px;
+}
+
+/* PROFILE BUTTON */
+.resume-profile {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00e0c6;
+  background: transparent;
+  color: #00e0c6;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resume-profile:hover {
+  background: #00e0c6;
+  color: #081c2d;
+}
+
+/* DIVIDER */
+.divider {
+  margin: 25px 0;
+  color: #9cc3d5;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+/* UPLOAD BOX */
+.upload-box {
+  display: block;
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px dashed #00e0c6;
+  cursor: pointer;
+  color: #00e0c6;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: rgba(0, 224, 198, 0.1);
+}
+
+/* CONTINUE BUTTON */
+.resume-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #00e0c6;
+  color: #081c2d;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  box-shadow: 0 0 18px #00e0c6;
+}

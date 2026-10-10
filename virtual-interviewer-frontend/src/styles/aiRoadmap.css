@@ -1,0 +1,260 @@
+/* ===== PAGE BASE ===== */
+.roadmap-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #061a2f, #020b16);
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  padding: 30px 40px;
+}
+
+.roadmap-page h1 {
+  text-align: center;
+  color: #4fc3f7;
+  margin-bottom: 30px;
+}
+
+/* ===== OVERALL PROGRESS ===== */
+.overall-box {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 153, 255, 0.25);
+  text-align: center;
+}
+
+.overall-box h2 {
+  color: #81d4fa;
+  margin-bottom: 10px;
+}
+
+/* ===== LAYOUT ===== */
+.roadmap-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+}
+
+/* ===== SELECTOR ===== */
+.selector-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.2);
+}
+
+.selector-box h3 {
+  margin-bottom: 15px;
+  color: #4fc3f7;
+}
+
+.selector-box button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(79, 195, 247, 0.4);
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.selector-box button:hover {
+  background: rgba(79, 195, 247, 0.15);
+}
+
+.selector-box button.active {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+}
+
+/* ===== AI BUTTON ===== */
+.ai-main-btn {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #00e5ff, #2979ff);
+  border: none !important;
+  font-weight: bold;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.timeline h2 {
+  color: #81d4fa;
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: width 0.3s ease;
+}
+
+/* ========== COMMON THEME ========== */
+.ai-input-page,
+.ai-roadmap-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #061a2f, #020b16);
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+  padding: 40px 20px;
+}
+
+/* ========== AI ROADMAP INPUT PAGE ========== */
+.ai-input-box {
+  max-width: 600px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0, 153, 255, 0.25);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.ai-input-box h2 {
+  margin-bottom: 20px;
+  color: #4fc3f7;
+}
+
+.ai-input-box textarea {
+  width: 100%;
+  min-height: 120px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(79, 195, 247, 0.4);
+  border-radius: 10px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+}
+
+.ai-input-box textarea::placeholder {
+  color: #9fbcd1;
+}
+
+.ai-input-box button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-input-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.6);
+}
+
+/* ========== ROADMAP VIEW PAGE ========== */
+.ai-roadmap-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4fc3f7;
+}
+
+/* ========== OVERALL PROGRESS ========== */
+.overall-ai-box {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.25);
+  text-align: center;
+}
+
+/* ========== PHASE CARD ========== */
+.ai-phase-card-ui {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(0, 153, 255, 0.2);
+}
+
+.ai-phase-card-ui h3 {
+  color: #81d4fa;
+  margin-bottom: 5px;
+}
+
+.ai-phase-card-ui p {
+  font-size: 13px;
+  color: #b0cfe3;
+}
+
+/* ========== TOPICS LIST ========== */
+.ai-phase-card-ui ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.ai-topic-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  margin-bottom: 10px;
+  transition: background 0.2s ease;
+}
+
+.ai-topic-item:hover {
+  background: rgba(0, 153, 255, 0.15);
+}
+
+.ai-topic-item input {
+  margin-top: 4px;
+  accent-color: #4fc3f7;
+  cursor: pointer;
+}
+
+.ai-topic-item b {
+  color: #ffffff;
+}
+
+.ai-topic-desc {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #9fbcd1;
+}
+
+/* ========== PROGRESS BAR ========== */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transition: width 0.3s ease;
+}

@@ -1,0 +1,145 @@
+[
+  {
+    "id": "netflix-q1",
+    "title": "Netflix Coding Question",
+    "statement": "Given n integers, print the maximum difference arr[j] - arr[i] such that j > i.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "2 <= n <= 200000",
+    "sampleInput": "6\n7 1 5 3 6 4",
+    "sampleOutput": "5",
+    "explanation": "Buy at 1 and sell at 6, difference is 5.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "5\n9 8 7 6 5",
+        "output": "-1"
+      },
+      {
+        "input": "7\n2 4 1 8 3 10 6",
+        "output": "9"
+      }
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "netflix-q2",
+    "title": "Netflix Coding Question",
+    "statement": "Given a string s, print the count of vowels (a, e, i, o, u).",
+    "inputFormat": "A single lowercase string s.",
+    "constraints": "1 <= |s| <= 100000",
+    "sampleInput": "interview",
+    "sampleOutput": "3",
+    "explanation": "Vowels are i, e, and i.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "rhythm",
+        "output": "0"
+      },
+      {
+        "input": "education",
+        "output": "5"
+      }
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "string"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "netflix-q3",
+    "title": "Netflix Coding Question",
+    "statement": "Given n integers, remove duplicates while preserving first occurrence order, then print the resulting sequence.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 200000",
+    "sampleInput": "8\n1 2 1 3 2 4 3 5",
+    "sampleOutput": "1 2 3 4 5",
+    "explanation": "Each value appears once in the order it first appears.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "5\n7 7 7 7 7",
+        "output": "7"
+      },
+      {
+        "input": "6\n4 5 4 6 5 7",
+        "output": "4 5 6 7"
+      }
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "array",
+      "hashmap"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "netflix-q4",
+    "title": "Netflix Coding Question",
+    "statement": "Given n and n integers, print the median. If n is even, print the average of the two middle values as a decimal.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 100000",
+    "sampleInput": "5\n5 1 9 3 7",
+    "sampleOutput": "5",
+    "explanation": "Sorted array is 1 3 5 7 9, median is 5.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "4\n1 2 3 4",
+        "output": "2.5"
+      },
+      {
+        "input": "6\n10 2 8 4 6 12",
+        "output": "7"
+      }
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "array",
+      "sorting"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "netflix-q5",
+    "title": "Netflix Coding Question",
+    "statement": "Given n integers, print the length of the longest strictly increasing contiguous subarray.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 200000",
+    "sampleInput": "8\n1 2 2 3 4 1 2 3",
+    "sampleOutput": "3",
+    "explanation": "The longest increasing contiguous segments are 2 3 4 and 1 2 3, each of length 3.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "5\n5 4 3 2 1",
+        "output": "1"
+      },
+      {
+        "input": "7\n1 2 3 4 5 6 7",
+        "output": "7"
+      }
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "array",
+      "dynamic-programming"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  }
+]

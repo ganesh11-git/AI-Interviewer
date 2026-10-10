@@ -1,0 +1,140 @@
+/* ===== Page Base ===== */
+.landing-page {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6fbff;
+  min-height: 100vh;
+  color: #0b1c2d;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  height: 70px;
+  background: linear-gradient(90deg, #061a2b, #0b2238);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.navbar h2 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+/* Login Button */
+.login-btn {
+  text-decoration: none;
+  padding: 8px 22px;
+  border: 2px solid #00e6d2;
+  color: #00e6d2;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  box-shadow: 0 0 0 3px #00e6d2;
+}
+
+/* Signup Button */
+.signup-btn {
+  text-decoration: none;
+  padding: 8px 22px;
+  background: #00e6d2;
+  color: #061a2b;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+  box-shadow: 0 0 15px #00e6d2,
+              0 0 25px #00e6d2;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  margin-top: 140px;
+  padding: 0 20px;
+  min-height: 85vh;
+}
+
+/* Big Title */
+.hero h1 {
+  font-size: 78px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #0b2238 40%, #00e6d2);
+  -webkit-background-clip:  text;
+  color: transparent;
+}
+
+/* Subtitle */
+.hero h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #00cdb8;
+  font-weight: 700;
+}
+
+/* Description */
+.hero p {
+  margin: 22px auto 40px;
+  max-width: 700px;
+  font-size: 18px;
+  color: #4b5b6a;
+  line-height: 1.6;
+}
+
+/* ===== Buttons ===== */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Primary Button */
+.prim-btn {
+  padding: 14px 34px;
+  background: #00e6d2;
+  color: #061a2b;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 230, 210, 0.35);
+  transition: 0.3s ease;
+}
+
+.prim-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 230, 210, 0.45);
+}
+
+/* Secondary Button */
+.sec-btn {
+  padding: 14px 34px;
+  background: transparent;
+  border: 2px solid #00e6d2;
+  color: #00cdb8;
+  font-weight: 700;
+  border-radius: 6px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.sec-btn:hover {
+  background: #00e6d2;
+  color: #061a2b;
+}

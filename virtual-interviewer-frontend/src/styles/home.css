@@ -1,0 +1,113 @@
+/* ===== PAGE BASE ===== */
+.home {
+  min-height: 100vh;
+  padding: 80px 80px 60px 80px;
+  background: linear-gradient(180deg, #f8fcff 0%, #eef6fb 100%);
+  font-family: "Segoe UI", sans-serif;
+  color: #0b1c2d;
+}
+
+/* ===== WELCOME HEADER ===== */
+.welcome {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.welcome span {
+  color: #00c6b2;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #4b647a;
+}
+
+/* ===== STATS CARDS ===== */
+.stats {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.card {
+  background: #0e2235;
+  color: white;
+  width: 340px;
+  height: 150px;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 198, 178, 0.15);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #7ea4c7;
+}
+
+.value {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: #0b1c2d;
+}
+
+/* ===== QUICK MODULES ===== */
+.modules {
+  margin-top: 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.module {
+  width: 300px;
+  height: 90px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+}
+
+.module:hover {
+  transform: scale(1.05);
+}
+
+/* THEME COLORS */
+.module.cyan {
+  background: linear-gradient(90deg, #00c6b2, #00e0c6);
+}
+
+.module.pink {
+  background: linear-gradient(90deg, #1b3147, #244b68);
+}
+
+.module.green {
+  background: linear-gradient(90deg, #102433, #193a52);
+}

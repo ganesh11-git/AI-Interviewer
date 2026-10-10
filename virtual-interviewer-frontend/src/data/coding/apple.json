@@ -1,0 +1,146 @@
+[
+  {
+    "id": "apple-q1",
+    "title": "Apple Coding Question",
+    "statement": "Given n integers, print the minimum and maximum values.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 100000",
+    "sampleInput": "5\n3 8 1 9 2",
+    "sampleOutput": "1 9",
+    "explanation": "Minimum is 1 and maximum is 9.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "1\n42",
+        "output": "42 42"
+      },
+      {
+        "input": "6\n-5 -2 -9 -1 -7 -3",
+        "output": "-9 -1"
+      }
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "array"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "apple-q2",
+    "title": "Apple Coding Question",
+    "statement": "Given a string, print Yes if it is a palindrome, otherwise print No.",
+    "inputFormat": "A single string s.",
+    "constraints": "1 <= |s| <= 100000",
+    "sampleInput": "madam",
+    "sampleOutput": "Yes",
+    "explanation": "madam reads the same forward and backward.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "racecar",
+        "output": "Yes"
+      },
+      {
+        "input": "apple",
+        "output": "No"
+      }
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "string",
+      "two-pointers"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "apple-q3",
+    "title": "Apple Coding Question",
+    "statement": "Given n and n integers, sort the array in ascending order and print it.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 100000",
+    "sampleInput": "5\n4 1 3 9 2",
+    "sampleOutput": "1 2 3 4 9",
+    "explanation": "Numbers are printed after sorting in non-decreasing order.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "4\n10 9 8 7",
+        "output": "7 8 9 10"
+      },
+      {
+        "input": "6\n5 5 5 2 2 9",
+        "output": "2 2 5 5 5 9"
+      }
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "array",
+      "sorting"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "apple-q4",
+    "title": "Apple Coding Question",
+    "statement": "Given n integers, print the sum of all even numbers.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 200000",
+    "sampleInput": "6\n1 2 3 4 5 6",
+    "sampleOutput": "12",
+    "explanation": "Even numbers are 2, 4, and 6. Their sum is 12.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "5\n1 3 5 7 9",
+        "output": "0"
+      },
+      {
+        "input": "4\n-2 10 11 -6",
+        "output": "2"
+      }
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "array",
+      "math"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "apple-q5",
+    "title": "Apple Coding Question",
+    "statement": "Given two sorted arrays, print their intersection (common elements) in sorted order. Print -1 if none.",
+    "inputFormat": "First line: n m. Second line: n sorted integers. Third line: m sorted integers.",
+    "constraints": "1 <= n, m <= 100000",
+    "sampleInput": "5 6\n1 2 2 3 4\n2 2 3 5 6 7",
+    "sampleOutput": "2 2 3",
+    "explanation": "Common elements with multiplicity are 2, 2, and 3.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "3 3\n1 3 5\n2 4 6",
+        "output": "-1"
+      },
+      {
+        "input": "4 5\n1 2 3 4\n2 3 4 5 6",
+        "output": "2 3 4"
+      }
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "array",
+      "two-pointers"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  }
+]

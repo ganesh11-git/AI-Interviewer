@@ -1,0 +1,104 @@
+.nav {
+  height: 70px;
+  width: 100%;
+  padding: 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(90deg, #081c2d, #0d2a3f);
+}
+
+/* LEFT LOGO */
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #00e0c6;
+  letter-spacing: 1px;
+}
+
+/* CENTER LINKS */
+.nav-links {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links, .nav-btn {
+  text-decoration: none;
+  color: #b9d6e8;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+
+/* RIGHT USER */
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-user button {
+  background: transparent;
+  border: 1px solid #CBD5E1;
+  color: #475569;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-user button:hover {
+  border-color: #EF4444;
+  color: #EF4444;
+  background: rgba(239, 68, 68, 0.06);
+}
+
+/* NAV LINKS BASE */
+.nav-links,.nav-btn {
+  position: relative;
+  text-decoration: none;
+  color: #b9d6e8;
+  font-weight: 500;
+  padding: 6px 2px;
+  transition: color 0.3s ease;
+}
+
+/* GLOW LINE UNDER */
+.nav-links .nav-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+
+  background: #00e0c6;
+  box-shadow: 0 0 10px #00e0c6, 0 0 20px #00e0c6;
+
+  transition: width 0.35s ease;
+}
+
+/* HOVER EFFECT */
+.nav-links .nav-btn:hover {
+  color: #00e0c6;
+}
+
+.nav-links .nav-btn:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE LINK (NavLink adds .active) */
+.nav-links .nav-btn.active {
+  color: #00e0c6;
+}
+
+.nav-links .nav-btn.active::after {
+  width: 100%;
+}

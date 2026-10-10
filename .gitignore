@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node.js
+node_modules/
+
+# Build output
+dist/
+build/
+
+# User-uploaded resumes and documents
+virtual-interviewer-backend/src/interviewer/uploads/
+virtual-interviewer-backend/uploads/resumes/
+
+# Temporary test files
+virtual-interviewer-backend/src/temp/

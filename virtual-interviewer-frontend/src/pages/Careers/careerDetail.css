@@ -1,0 +1,157 @@
+/* PAGE */
+.career-detail-page {
+  min-height: 100vh;
+  padding: 60px 90px;
+  background: #f4fbff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  border: 1px solid #00e0c6;
+  background: transparent;
+  color: #00e0c6;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.back-btn:hover {
+  background: #00e0c6;
+  color: #06202f;
+  box-shadow: 0 0 12px #00e0c6;
+}
+
+/* TITLE */
+.career-title {
+  font-size: 46px;
+  font-weight: 800;
+  color: #06202f;
+  margin-bottom: 18px;
+}
+
+/* LONG DESCRIPTION */
+.career-long-desc {
+  color: #35586d;
+  line-height: 1.7;
+  max-width: 1100px;
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+
+/* LAYOUT */
+.career-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.career-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* DETAIL CARD */
+.detail-card {
+  background: linear-gradient(145deg, #0c2436, #0f2e45);
+  border-radius: 16px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0, 224, 198, 0.15);
+}
+
+.detail-card h3 {
+  margin-bottom: 20px;
+  color: #00e0c6;
+}
+
+/* SKILLS */
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.skill-bar span {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.15);
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 70%;
+  height: 100%;
+  background: #00e0c6;
+  box-shadow: 0 0 10px #00e0c6;
+}
+
+/* COMPANY TAGS */
+.company-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.company-tags span {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #00e0c6;
+  color: #06202f;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* RIGHT SIDE */
+.career-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* SALARY BOX */
+.salary-box {
+  background: linear-gradient(145deg, #0c2436, #0f2e45);
+  padding: 30px;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 224, 198, 0.15);
+}
+
+.salary-box h3 {
+  color: #00e0c6;
+  margin-bottom: 12px;
+}
+
+.salary-box p {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* INTERVIEW BUTTON */
+.interview-btn {
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #00e0c6;
+  color: #06202f;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.interview-btn:hover {
+  box-shadow: 0 0 18px #00e0c6;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,192 @@
+.learning-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #020b1c;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.sidebar a {
+  display: block;
+  padding: 8px;
+  color: cyan;
+}
+
+.learning-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+.learning-layout {
+  background: #020617;
+  color: white;
+  min-height: 100vh;
+}
+
+.learning-body {
+  display: flex;
+}
+
+.topic-sidebar {
+  width: 260px;
+  border-right: 2px solid cyan;
+  padding: 15px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.learning-content {
+  flex: 1;
+  padding: 30px;
+}
+.lang-navbar {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: black;
+  border-bottom: 2px solid cyan;
+}
+
+.lang-navbar a {
+  color: cyan;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border: 1px solid cyan;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.lang-navbar a:hover {
+  background: cyan;
+  color: black;
+  box-shadow: 0 0 15px cyan;
+}
+
+.learning-container {
+  height: 100vh;
+  background: #020617;
+  color: white;
+}
+
+.learning-body {
+  display: flex;
+}
+
+.topic-sidebar {
+  width: 250px;
+  background: black;
+  padding: 10px;
+  border-right: 2px solid magenta;
+}
+
+.topic-sidebar a {
+  display: block;
+  color: lime;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.topic-sidebar a:hover {
+  background: #111;
+  box-shadow: 0 0 10px magenta;
+}
+
+.topic-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.nav-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: cyan;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.learning-container {
+  background: #0b0f1a;
+  color: white;
+  height: 100vh;
+}
+
+.language-navbar {
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background: black;
+  border-bottom: 2px solid cyan;
+}
+
+.language-navbar a {
+  color: cyan;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 15px;
+  border: 1px solid cyan;
+  border-radius: 6px;
+}
+
+.language-navbar a.active {
+  background: cyan;
+  color: black;
+}
+
+.learning-body {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.topic-sidebar {
+  width: 260px;
+  background: #050a14;
+  border-right: 2px solid cyan;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.topic-sidebar a {
+  display: block;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.topic-sidebar a.active {
+  background: cyan;
+  color: black;
+}
+
+.topic-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.nav-buttons {
+  margin-top: 30px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background: cyan;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.quiz-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: magenta;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}

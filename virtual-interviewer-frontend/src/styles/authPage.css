@@ -1,0 +1,113 @@
+/* ===== PAGE BACKGROUND ===== */
+.auth-container {
+  height: 100vh;
+  width: 100%;
+  background: #f5fbff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== LOGIN CARD ===== */
+.auth-box {
+  width: 420px;
+  padding: 50px 45px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e4eef7;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.auth-box:hover{
+  box-shadow: 0 0 20px rgba(0, 128, 128, 0.521);
+}
+
+/* ===== TITLE ===== */
+.auth-box h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0b1c2d;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.auth-box h2::after {
+  content: "Access your interview command center";
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b8aa6;
+  margin-top: 10px;
+}
+
+/* ===== INPUTS ===== */
+.auth-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-top: 18px;
+  border-radius: 6px;
+  border: 1px solid #cfe0f0;
+  font-size: 14px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.auth-input:focus {
+  border-color: #00c2a8;
+  box-shadow: 0 0 0 3px rgba(0, 194, 168, 0.12);
+}
+
+/* ===== BUTTON ===== */
+.log-btn {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #00c2a8, #00e0c6);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.log-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 194, 168, 0.3);
+}
+
+.sign-btn{
+    width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #00c2a8, #00e0c6);
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.sign-btn:hover{
+    transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 194, 168, 0.3);
+}
+
+/* ===== FOOTER ===== */
+.auth-footer {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #6b8aa6;
+}
+
+.auth-footer span {
+  color: #00c2a8;
+  cursor: pointer;
+  font-weight: 600;
+}

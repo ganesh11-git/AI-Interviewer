@@ -1,0 +1,618 @@
+{
+  "data-structures": {
+    "basic": [
+      {
+        "id": "ds-basic-q1",
+        "title": "Data Structures Basic 1",
+        "statement": "Find the sum of first N natural numbers.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 1000000",
+        "sampleInput": "5",
+        "sampleOutput": "15",
+        "explanation": "1 + 2 + 3 + 4 + 5 = 15.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "1", "output": "1" },
+          { "input": "10", "output": "55" }
+        ],
+        "difficulty": "easy",
+        "tags": ["math", "array"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-basic-q2",
+        "title": "Data Structures Basic 2",
+        "statement": "Reverse an array and print elements in one line separated by spaces.",
+        "inputFormat": "First line: n. Second line: n integers.",
+        "constraints": "1 <= n <= 200000",
+        "sampleInput": "5\n1 2 3 4 5",
+        "sampleOutput": "5 4 3 2 1",
+        "explanation": "Print from last index to first index.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "1\n9", "output": "9" },
+          { "input": "4\n10 20 30 40", "output": "40 30 20 10" }
+        ],
+        "difficulty": "easy",
+        "tags": ["array"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-basic-q3",
+        "title": "Data Structures Basic 3",
+        "statement": "Find the maximum element in an array.",
+        "inputFormat": "First line: n. Second line: n integers.",
+        "constraints": "1 <= n <= 200000",
+        "sampleInput": "6\n3 9 2 11 7 5",
+        "sampleOutput": "11",
+        "explanation": "11 is the largest value.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "3\n-1 -5 -2", "output": "-1" },
+          { "input": "5\n1 1 1 1 1", "output": "1" }
+        ],
+        "difficulty": "easy",
+        "tags": ["array"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-basic-q4",
+        "title": "Data Structures Basic 4",
+        "statement": "Left rotate an array by k positions. If k > n, use k mod n.",
+        "inputFormat": "First line: n k. Second line: n integers.",
+        "constraints": "1 <= n <= 200000, 0 <= k <= 1000000000",
+        "sampleInput": "5 2\n1 2 3 4 5",
+        "sampleOutput": "3 4 5 1 2",
+        "explanation": "After 2 left rotations, first two elements move to end.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "4 1\n10 20 30 40", "output": "20 30 40 10" },
+          { "input": "6 8\n1 2 3 4 5 6", "output": "3 4 5 6 1 2" }
+        ],
+        "difficulty": "easy",
+        "tags": ["array", "rotation"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-basic-q5",
+        "title": "Data Structures Basic 5",
+        "statement": "Count occurrences of target x in an array.",
+        "inputFormat": "First line: n x. Second line: n integers.",
+        "constraints": "1 <= n <= 200000",
+        "sampleInput": "7 3\n3 1 3 4 3 5 2",
+        "sampleOutput": "3",
+        "explanation": "Number 3 appears three times.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "5 9\n1 2 3 4 5", "output": "0" },
+          { "input": "4 2\n2 2 2 2", "output": "4" }
+        ],
+        "difficulty": "easy",
+        "tags": ["array", "counting"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "ds-int-q1",
+        "title": "Data Structures Intermediate 1",
+        "statement": "Check whether brackets are balanced. String contains only (), {}, []. Print Yes or No.",
+        "inputFormat": "Single string s.",
+        "constraints": "1 <= |s| <= 200000",
+        "sampleInput": "{[()]}",
+        "sampleOutput": "Yes",
+        "explanation": "All opening brackets are closed in proper order.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "([)]", "output": "No" },
+          { "input": "((()))", "output": "Yes" }
+        ],
+        "difficulty": "medium",
+        "tags": ["stack", "string"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-int-q2",
+        "title": "Data Structures Intermediate 2",
+        "statement": "Find first non-repeating character in a string. Print -1 if none exists.",
+        "inputFormat": "Single lowercase string s.",
+        "constraints": "1 <= |s| <= 200000",
+        "sampleInput": "aabccdbe",
+        "sampleOutput": "d",
+        "explanation": "d is first character with frequency 1.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "leetcode", "output": "l" },
+          { "input": "aabbcc", "output": "-1" }
+        ],
+        "difficulty": "medium",
+        "tags": ["hashmap", "string"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-int-q3",
+        "title": "Data Structures Intermediate 3",
+        "statement": "Given array and target, print 1-based indices of two numbers whose sum equals target.",
+        "inputFormat": "First line: n target. Second line: n integers.",
+        "constraints": "2 <= n <= 200000",
+        "sampleInput": "5 9\n2 7 11 15 1",
+        "sampleOutput": "1 2",
+        "explanation": "2 + 7 = 9.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "4 10\n6 4 3 7", "output": "1 2" },
+          { "input": "6 5\n1 2 3 4 5 0", "output": "3 6" }
+        ],
+        "difficulty": "medium",
+        "tags": ["array", "hashmap"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-int-q4",
+        "title": "Data Structures Intermediate 4",
+        "statement": "Given sorted array, remove duplicates conceptually and print count of unique elements.",
+        "inputFormat": "First line: n. Second line: n sorted integers.",
+        "constraints": "1 <= n <= 200000",
+        "sampleInput": "8\n1 1 2 2 2 3 5 5",
+        "sampleOutput": "4",
+        "explanation": "Unique elements are 1,2,3,5.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "5\n1 2 3 4 5", "output": "5" },
+          { "input": "6\n7 7 7 7 7 7", "output": "1" }
+        ],
+        "difficulty": "medium",
+        "tags": ["two-pointers", "array"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-int-q5",
+        "title": "Data Structures Intermediate 5",
+        "statement": "Given n, l, r and array of n integers, print sum of elements from l to r (1-based, inclusive).",
+        "inputFormat": "First line: n l r. Second line: n integers.",
+        "constraints": "1 <= n <= 200000",
+        "sampleInput": "6 2 5\n3 1 4 1 5 9",
+        "sampleOutput": "11",
+        "explanation": "1 + 4 + 1 + 5 = 11.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "5 1 5\n1 2 3 4 5", "output": "15" },
+          { "input": "4 3 4\n10 20 30 40", "output": "70" }
+        ],
+        "difficulty": "medium",
+        "tags": ["prefix-sum", "array"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      }
+    ],
+    "advanced": [
+      {
+        "id": "ds-adv-q1",
+        "title": "Data Structures Advanced 1",
+        "statement": "For each array element, print next greater element to its right. If none, print -1.",
+        "inputFormat": "First line: n. Second line: n integers.",
+        "constraints": "1 <= n <= 200000",
+        "sampleInput": "4\n4 5 2 10",
+        "sampleOutput": "5 10 10 -1",
+        "explanation": "Use monotonic stack from right to left.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "5\n13 7 6 12 10", "output": "-1 12 12 -1 -1" },
+          { "input": "3\n3 2 1", "output": "-1 -1 -1" }
+        ],
+        "difficulty": "hard",
+        "tags": ["stack", "array"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-adv-q2",
+        "title": "Data Structures Advanced 2",
+        "statement": "Given array and window size k, print maximum for every contiguous subarray of size k.",
+        "inputFormat": "First line: n k. Second line: n integers.",
+        "constraints": "1 <= k <= n <= 200000",
+        "sampleInput": "8 3\n1 3 -1 -3 5 3 6 7",
+        "sampleOutput": "3 3 5 5 6 7",
+        "explanation": "Maintain deque of useful indices.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "5 2\n4 2 12 3 8", "output": "4 12 12 8" },
+          { "input": "4 4\n9 1 7 2", "output": "9" }
+        ],
+        "difficulty": "hard",
+        "tags": ["deque", "sliding-window"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-adv-q3",
+        "title": "Data Structures Advanced 3",
+        "statement": "Find largest rectangle area in histogram.",
+        "inputFormat": "First line: n. Second line: n bar heights.",
+        "constraints": "1 <= n <= 200000",
+        "sampleInput": "6\n2 1 5 6 2 3",
+        "sampleOutput": "10",
+        "explanation": "Largest area is formed by heights 5 and 6 with width 2 -> 10.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "4\n2 4 2 1", "output": "6" },
+          { "input": "3\n1 1 1", "output": "3" }
+        ],
+        "difficulty": "hard",
+        "tags": ["stack", "histogram"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-adv-q4",
+        "title": "Data Structures Advanced 4",
+        "statement": "Given arrival and departure times of trains, find minimum number of platforms required.",
+        "inputFormat": "First line: n. Second line: n arrival times. Third line: n departure times.",
+        "constraints": "1 <= n <= 200000",
+        "sampleInput": "6\n900 940 950 1100 1500 1800\n910 1200 1120 1130 1900 2000",
+        "sampleOutput": "3",
+        "explanation": "At one point, 3 trains overlap in station.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "3\n900 1000 1100\n930 1030 1130", "output": "1" },
+          { "input": "4\n900 905 915 920\n930 940 950 960", "output": "4" }
+        ],
+        "difficulty": "hard",
+        "tags": ["sorting", "two-pointers"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "ds-adv-q5",
+        "title": "Data Structures Advanced 5",
+        "statement": "Find the k-th smallest element in an unsorted array.",
+        "inputFormat": "First line: n k. Second line: n integers.",
+        "constraints": "1 <= k <= n <= 200000",
+        "sampleInput": "6 3\n7 10 4 3 20 15",
+        "sampleOutput": "7",
+        "explanation": "Sorted order is 3 4 7 10 15 20.",
+        "comparator": "token",
+        "hiddenTestCases": [
+          { "input": "5 1\n9 2 8 1 5", "output": "1" },
+          { "input": "7 5\n12 3 5 7 19 0 4", "output": "7" }
+        ],
+        "difficulty": "hard",
+        "tags": ["array", "selection"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      }
+    ]
+  },
+  "coding-patterns": {
+    "basic": [
+      {
+        "id": "pattern-basic-q1",
+        "title": "Pattern Basic 1",
+        "statement": "Print a square star pattern of size n.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "3",
+        "sampleOutput": "***\n***\n***",
+        "explanation": "Print n rows, each containing n stars.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "*" },
+          { "input": "2", "output": "**\n**" }
+        ],
+        "difficulty": "easy",
+        "tags": ["pattern"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-basic-q2",
+        "title": "Pattern Basic 2",
+        "statement": "Print a left-aligned right triangle star pattern of height n.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "4",
+        "sampleOutput": "*\n**\n***\n****",
+        "explanation": "Row i contains i stars.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "*" },
+          { "input": "3", "output": "*\n**\n***" }
+        ],
+        "difficulty": "easy",
+        "tags": ["pattern"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-basic-q3",
+        "title": "Pattern Basic 3",
+        "statement": "Print a number triangle from 1 to n where row i contains numbers from 1 to i.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "4",
+        "sampleOutput": "1\n1 2\n1 2 3\n1 2 3 4",
+        "explanation": "Build each row incrementally from 1 to row index.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "2", "output": "1\n1 2" },
+          { "input": "3", "output": "1\n1 2\n1 2 3" }
+        ],
+        "difficulty": "easy",
+        "tags": ["pattern", "numbers"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-basic-q4",
+        "title": "Pattern Basic 4",
+        "statement": "Print n rows. In row i, print number i exactly i times separated by spaces.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "4",
+        "sampleOutput": "1\n2 2\n3 3 3\n4 4 4 4",
+        "explanation": "Repeat row index i exactly i times.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "1" },
+          { "input": "3", "output": "1\n2 2\n3 3 3" }
+        ],
+        "difficulty": "easy",
+        "tags": ["pattern", "numbers"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-basic-q5",
+        "title": "Pattern Basic 5",
+        "statement": "Print a binary triangle of height n where value at (i, j) is (i + j) % 2.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "4",
+        "sampleOutput": "0\n1 0\n0 1 0\n1 0 1 0",
+        "explanation": "Compute each entry using parity of i + j (1-indexed).",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "2", "output": "0\n1 0" },
+          { "input": "3", "output": "0\n1 0\n0 1 0" }
+        ],
+        "difficulty": "easy",
+        "tags": ["pattern", "binary"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      }
+    ],
+    "intermediate": [
+      {
+        "id": "pattern-intermediate-q1",
+        "title": "Pattern Intermediate 1",
+        "statement": "Print a centered pyramid star pattern of height n.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "3",
+        "sampleOutput": "  *\n ***\n*****",
+        "explanation": "Row i has n-i leading spaces and 2*i-1 stars.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "*" },
+          { "input": "2", "output": " *\n***" }
+        ],
+        "difficulty": "medium",
+        "tags": ["pattern", "pyramid"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-intermediate-q2",
+        "title": "Pattern Intermediate 2",
+        "statement": "Print a hollow square of size n using stars.",
+        "inputFormat": "Single integer n.",
+        "constraints": "2 <= n <= 20",
+        "sampleInput": "4",
+        "sampleOutput": "****\n*  *\n*  *\n****",
+        "explanation": "Border cells are stars, inner cells are spaces.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "2", "output": "**\n**" },
+          { "input": "3", "output": "***\n* *\n***" }
+        ],
+        "difficulty": "medium",
+        "tags": ["pattern", "hollow"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-intermediate-q3",
+        "title": "Pattern Intermediate 3",
+        "statement": "Print Floyd's triangle with n rows.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "4",
+        "sampleOutput": "1\n2 3\n4 5 6\n7 8 9 10",
+        "explanation": "Use a running counter and print row-wise.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "1" },
+          { "input": "3", "output": "1\n2 3\n4 5 6" }
+        ],
+        "difficulty": "medium",
+        "tags": ["pattern", "numbers"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-intermediate-q4",
+        "title": "Pattern Intermediate 4",
+        "statement": "Print an inverted right triangle star pattern of height n.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "4",
+        "sampleOutput": "****\n***\n**\n*",
+        "explanation": "Row i contains n-i+1 stars.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "2", "output": "**\n*" },
+          { "input": "3", "output": "***\n**\n*" }
+        ],
+        "difficulty": "medium",
+        "tags": ["pattern"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-intermediate-q5",
+        "title": "Pattern Intermediate 5",
+        "statement": "Print a centered number pyramid of height n. Row i prints 1..i..1.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 15",
+        "sampleInput": "4",
+        "sampleOutput": "   1\n  121\n 12321\n1234321",
+        "explanation": "Build increasing then decreasing sequence for each row with leading spaces.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "2", "output": " 1\n121" },
+          { "input": "3", "output": "  1\n 121\n12321" }
+        ],
+        "difficulty": "medium",
+        "tags": ["pattern", "numbers"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      }
+    ],
+    "advanced": [
+      {
+        "id": "pattern-advanced-q1",
+        "title": "Pattern Advanced 1",
+        "statement": "Print a diamond star pattern for n. Total rows are 2*n - 1.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 20",
+        "sampleInput": "3",
+        "sampleOutput": "  *\n ***\n*****\n ***\n  *",
+        "explanation": "Combine a pyramid and an inverted pyramid.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "*" },
+          { "input": "2", "output": " *\n***\n *" }
+        ],
+        "difficulty": "hard",
+        "tags": ["pattern", "diamond"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-advanced-q2",
+        "title": "Pattern Advanced 2",
+        "statement": "Print a hollow diamond of height n.",
+        "inputFormat": "Single integer n.",
+        "constraints": "2 <= n <= 20",
+        "sampleInput": "3",
+        "sampleOutput": "  *\n * *\n*   *\n * *\n  *",
+        "explanation": "Only boundary positions in each row are stars.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "2", "output": " *\n* *\n *" },
+          { "input": "4", "output": "   *\n  * *\n *   *\n*     *\n *   *\n  * *\n   *" }
+        ],
+        "difficulty": "hard",
+        "tags": ["pattern", "hollow"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-advanced-q3",
+        "title": "Pattern Advanced 3",
+        "statement": "Print an hourglass star pattern for n.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 15",
+        "sampleInput": "3",
+        "sampleOutput": "*****\n ***\n  *\n ***\n*****",
+        "explanation": "Star counts decrease to middle then increase symmetrically.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "*" },
+          { "input": "2", "output": "***\n *\n***" }
+        ],
+        "difficulty": "hard",
+        "tags": ["pattern", "symmetry"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-advanced-q4",
+        "title": "Pattern Advanced 4",
+        "statement": "Print Pascal's triangle for n rows.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 15",
+        "sampleInput": "5",
+        "sampleOutput": "1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1",
+        "explanation": "Each value is sum of two values above it, edges are 1.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "1" },
+          { "input": "4", "output": "1\n1 1\n1 2 1\n1 3 3 1" }
+        ],
+        "difficulty": "hard",
+        "tags": ["pattern", "combinatorics"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      },
+      {
+        "id": "pattern-advanced-q5",
+        "title": "Pattern Advanced 5",
+        "statement": "Print a butterfly star pattern for n.",
+        "inputFormat": "Single integer n.",
+        "constraints": "1 <= n <= 15",
+        "sampleInput": "3",
+        "sampleOutput": "*    *\n**  **\n******\n**  **\n*    *",
+        "explanation": "Upper half increases stars, lower half mirrors it.",
+        "comparator": "relaxed",
+        "hiddenTestCases": [
+          { "input": "1", "output": "**" },
+          { "input": "2", "output": "*  *\n****\n*  *" }
+        ],
+        "difficulty": "hard",
+        "tags": ["pattern", "symmetry"],
+        "timeLimitMs": 2000,
+        "memoryLimitKb": 262144,
+        "authorSolution": ""
+      }
+    ]
+  }
+}

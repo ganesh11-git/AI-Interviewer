@@ -1,0 +1,146 @@
+[
+  {
+    "id": "meta-q1",
+    "title": "Meta Coding Question",
+    "statement": "Given n integers, print the frequency of each distinct number in ascending order of number.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 200000, -1e9 <= a[i] <= 1e9",
+    "sampleInput": "7\n4 5 4 6 5 4 7",
+    "sampleOutput": "4 3\n5 2\n6 1\n7 1",
+    "explanation": "4 appears 3 times, 5 appears 2 times, and 6, 7 appear once.",
+    "comparator": "relaxed",
+    "hiddenTestCases": [
+      {
+        "input": "5\n1 1 1 1 1",
+        "output": "1 5"
+      },
+      {
+        "input": "6\n3 2 3 2 1 1",
+        "output": "1 2\n2 2\n3 2"
+      }
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "array",
+      "hashmap"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "meta-q2",
+    "title": "Meta Coding Question",
+    "statement": "Given a string, print the length of the longest substring without repeating characters.",
+    "inputFormat": "A single string s.",
+    "constraints": "1 <= |s| <= 100000",
+    "sampleInput": "abcabcbb",
+    "sampleOutput": "3",
+    "explanation": "The answer is \"abc\" with length 3.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "bbbbb",
+        "output": "1"
+      },
+      {
+        "input": "pwwkew",
+        "output": "3"
+      }
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "string",
+      "sliding-window"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "meta-q3",
+    "title": "Meta Coding Question",
+    "statement": "Check whether two strings are anagrams. Print Yes or No.",
+    "inputFormat": "Two lines, each containing one lowercase string.",
+    "constraints": "1 <= |s|, |t| <= 100000",
+    "sampleInput": "listen\nsilent",
+    "sampleOutput": "Yes",
+    "explanation": "Both strings contain the same letters with the same frequency.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "triangle\nintegral",
+        "output": "Yes"
+      },
+      {
+        "input": "apple\npapelx",
+        "output": "No"
+      }
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "string",
+      "hashmap"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "meta-q4",
+    "title": "Meta Coding Question",
+    "statement": "Given n integers, print all leaders in the array from left to right. A leader is greater than all elements to its right.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 200000",
+    "sampleInput": "6\n16 17 4 3 5 2",
+    "sampleOutput": "17 5 2",
+    "explanation": "17, 5, and 2 are greater than every element to their right.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "5\n5 4 3 2 1",
+        "output": "5 4 3 2 1"
+      },
+      {
+        "input": "4\n1 2 3 4",
+        "output": "4"
+      }
+    ],
+    "difficulty": "medium",
+    "tags": [
+      "array"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  },
+  {
+    "id": "meta-q5",
+    "title": "Meta Coding Question",
+    "statement": "Given n and an array, move all zeros to the end while maintaining the relative order of non-zero elements.",
+    "inputFormat": "First line contains n. Second line contains n integers.",
+    "constraints": "1 <= n <= 200000",
+    "sampleInput": "8\n0 1 0 3 12 0 5 0",
+    "sampleOutput": "1 3 12 5 0 0 0 0",
+    "explanation": "Non-zero elements stay in order; all zeros are shifted to the end.",
+    "comparator": "token",
+    "hiddenTestCases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "output": "1 2 3 4 5"
+      },
+      {
+        "input": "6\n0 0 0 1 0 2",
+        "output": "1 2 0 0 0 0"
+      }
+    ],
+    "difficulty": "easy",
+    "tags": [
+      "array",
+      "two-pointers"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitKb": 262144,
+    "authorSolution": ""
+  }
+]

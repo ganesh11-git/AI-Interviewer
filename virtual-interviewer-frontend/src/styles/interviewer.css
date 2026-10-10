@@ -1,0 +1,93 @@
+/* PAGE WRAPPER */
+.config-container {
+  min-height: 100vh;
+  padding: 120px 60px 60px;
+  background: linear-gradient(180deg, #f4fbff 0%, #e9f6ff 100%);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+}
+
+/* LEFT PANEL */
+.config-left {
+  background: #081c2d;
+  border-radius: 16px;
+  padding: 40px;
+  color: #e8f8ff;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* TITLE */
+.config-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #00e0c6;
+  letter-spacing: 1px;
+}
+
+/* GROUP */
+.config-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.config-group label {
+  margin-bottom: 8px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #9cc3d5;
+}
+
+/* SELECT & INPUT */
+.config-group select,
+.target-role {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #12364d;
+  background: #0d2a3f;
+  color: #e8f8ff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.config-group select:focus,
+.target-role:focus {
+  border-color: #00e0c6;
+  box-shadow: 0 0 0 3px rgba(0, 224, 198, 0.2);
+}
+
+/* BUTTON */
+.init-btn {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #00e0c6;
+  color: #081c2d;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 224, 198, 0.35);
+}
+
+.init-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(0, 224, 198, 0.45);
+}
+
+/* RIGHT PANEL */
+.config-right {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.recent-title {
+  font-size: 22px;
+  color: #081c2d;
+  margin-bottom: 20px;
+}

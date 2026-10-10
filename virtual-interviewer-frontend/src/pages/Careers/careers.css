@@ -1,0 +1,111 @@
+/* PAGE BACKGROUND */
+.career-page {
+  min-height: 100vh;
+  padding: 60px 80px;
+  background: #f4fbff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* AI BUTTON */
+.ai-advisor-btn {
+  float: right;
+  margin-bottom: 30px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 1px solid #00e0c6;
+  background: transparent;
+  color: #00e0c6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ai-advisor-btn:hover {
+  background: #00e0c6;
+  color: #06202f;
+  box-shadow: 0 0 15px #00e0c6;
+}
+
+/* TITLE */
+.career-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #06202f;
+  margin-top: 70px;
+}
+
+/* SUBTITLE */
+.career-subtitle {
+  text-align: center;
+  margin-top: 12px;
+  color: #496a80;
+  font-size: 18px;
+}
+
+/* GRID */
+.career-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* CARD */
+.career-card-futuristic {
+  background: linear-gradient(145deg, #0c2436, #0f2e45);
+  border-radius: 18px;
+  padding: 40px 30px;
+  color: white;
+  text-align: center;
+  transition: 0.35s ease;
+  box-shadow: 0 10px 25px rgba(0, 224, 198, 0.15);
+  border: 1px solid rgba(0, 224, 198, 0.15);
+}
+
+/* HOVER EFFECT */
+.career-card-futuristic:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 224, 198, 0.35);
+  border: 1px solid #00e0c6;
+}
+
+/* ICON */
+.career-icon {
+  font-size: 42px;
+  color: #00e0c6;
+  margin-bottom: 20px;
+}
+
+/* TITLE */
+.career-card-futuristic h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+/* DESCRIPTION */
+.career-desc {
+  font-size: 15px;
+  color: #c4e4f3;
+  margin-bottom: 28px;
+}
+
+/* BUTTON */
+.career-card-futuristic button {
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: 1px solid #00e0c6;
+  background: transparent;
+  color: #00e0c6;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.career-card-futuristic button:hover {
+  background: #00e0c6;
+  color: #06202f;
+  box-shadow: 0 0 18px #00e0c6;
+}
